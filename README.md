@@ -1,1 +1,1 @@
-# rsschool-cv
+https://systemkiller03.github.io/rsschool-cv/
