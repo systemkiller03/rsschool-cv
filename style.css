@@ -32,8 +32,6 @@ header section {
 header section p {
     font-size: 1.7rem;
     font-weight: 700;
-    
-
 }
 header section div {
     display: flex;
@@ -45,7 +43,7 @@ header section div {
 }
 .self-description {
     border-left: 4px solid #8f719c;
-    padding:10px 30px;
+    padding: 10px 30px;
     font-size: 1.3rem;
     line-height: 1.6rem;
     color: white;
@@ -61,10 +59,12 @@ header h1 {
 }
 
 @keyframes text-shadow-flicker {
-    25%, 75% {
+    25%,
+    75% {
         text-shadow: 0px 10px 10px #8f719ca0;
     }
-    0%, 100% {
+    0%,
+    100% {
         text-shadow: 0px 10px 10px #8f719c00;
     }
 }
@@ -171,10 +171,7 @@ nav ul li a {
 
 @keyframes flower-float {
     0% {
-        transform:
-            translate3d(0, 0, 0)
-            rotate(-15deg)
-            scale(0.7);
+        transform: translate3d(0, 0, 0) rotate(-15deg) scale(0.7);
         opacity: 0;
     }
 
@@ -183,60 +180,48 @@ nav ul li a {
     }
 
     30% {
-        transform:
-            translate3d(30px, -25vh, 0)
-            rotate(20deg)
-            scale(0.85);
+        transform: translate3d(30px, -25vh, 0) rotate(20deg) scale(0.85);
     }
 
     55% {
-        transform:
-            translate3d(-25px, -50vh, 0)
-            rotate(-10deg)
-            scale(1);
+        transform: translate3d(-25px, -50vh, 0) rotate(-10deg) scale(1);
     }
 
     75% {
-        transform:
-            translate3d(35px, -75vh, 0)
-            rotate(25deg)
-            scale(0.9);
+        transform: translate3d(35px, -75vh, 0) rotate(25deg) scale(0.9);
         opacity: 0.25;
     }
 
     100% {
-        transform:
-            translate3d(-20px, -115vh, 0)
-            rotate(45deg)
-            scale(0.75);
+        transform: translate3d(-20px, -115vh, 0) rotate(45deg) scale(0.75);
         opacity: 0;
     }
 }
 
 main section {
     width: 100%;
-    min-height: 100vh;
+    min-height: 50vh;
     height: auto;
     padding: 5%;
 }
-main section h2{
+main section h2 {
     color: #b495c2;
     font-family: 'Roboto Mono', cursive;
     font-size: 3rem;
     margin-top: 50px;
     margin-left: 20px;
 }
-section p{
+section p {
     color: white;
     font-family: 'Roboto Mono', cursive;
     font-size: 1.2rem;
     margin-top: 20px;
     line-height: 2rem;
 }
-#about span{
+#about span {
     border-left: 4px solid #8f719c;
-    margin:20px;
-    padding:10px 30px;
+    margin: 20px;
+    padding: 10px 30px;
     display: block;
 }
 
@@ -245,13 +230,13 @@ section p{
     flex-direction: column;
     gap: 40px;
 }
- 
+
 .skill-group {
     margin-left: 20px;
     padding-left: 30px;
     border-left: 4px solid #8f719c;
 }
- 
+
 .skill-group h3 {
     color: #b495c2;
     font-family: 'Roboto Mono', monospace;
@@ -259,14 +244,14 @@ section p{
     font-weight: 500;
     margin-bottom: 16px;
 }
- 
+
 .tag-list {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
 }
- 
+
 .tag-list li {
     color: white;
     font-family: 'Roboto Mono', monospace;
@@ -275,14 +260,19 @@ section p{
     border: 1px solid #8f719c80;
     border-radius: 999px;
     background: #8f719c1a;
-    transition: background 0.2s ease, border-color 0.2s ease;
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
 }
- 
+
 .tag-list li:hover {
     background: #8f719c33;
     border-color: #8f719c;
 }
- 
+
+#experience h2 {
+    margin-bottom: 30px;
+}
 .timeline {
     list-style: none;
     position: relative;
@@ -290,16 +280,16 @@ section p{
     padding-left: 40px;
     border-left: 2px solid #8f719c50;
 }
- 
+
 .timeline > li {
     position: relative;
     margin-bottom: 60px;
 }
- 
+
 .timeline > li:last-child {
     margin-bottom: 0;
 }
- 
+
 .timeline-marker {
     position: absolute;
     top: 8px;
@@ -308,29 +298,53 @@ section p{
     height: 16px;
     border-radius: 50%;
     background: #b495c2;
-    box-shadow: 0 0 0 4px #0f1019, 0 0 12px #8f719c;
+    box-shadow:
+        0 0 0 4px #0f1019,
+        0 0 12px #8f719c;
 }
- 
+
+.timeline-content .sub-role {
+    margin-top: 26px;
+    padding-top: 22px;
+    border-top: 1px dashed #8f719c40;
+}
+
+.timeline-content .sub-role:first-of-type {
+    margin-top: 20px;
+    padding-top: 0;
+    border-top: none;
+}
+
+.timeline-content h4 {
+    color: #b495c2;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.timeline-content .sub-role p {
+    margin-top: 12px;
+}
 .timeline-content h3 {
     color: white;
     font-family: 'Roboto Mono', monospace;
     font-size: 1.4rem;
     font-weight: 500;
 }
- 
+
 .timeline-content .meta {
     color: #b495c2;
     font-size: 0.95rem;
     margin-top: 6px;
     line-height: normal;
 }
- 
+
 .timeline-content p {
     margin-top: 14px;
     font-size: 1.05rem;
     line-height: 1.7rem;
 }
- 
+
 .timeline-content ul {
     margin-top: 14px;
     padding-left: 22px;
@@ -338,14 +352,14 @@ section p{
     flex-direction: column;
     gap: 10px;
 }
- 
+
 .timeline-content ul li {
     color: #e6dfeb;
     font-family: 'Roboto Mono', monospace;
     font-size: 1rem;
     line-height: 1.6rem;
 }
- 
+
 .timeline-content .stack {
     margin-top: 18px;
     font-size: 0.9rem;
@@ -356,14 +370,15 @@ section p{
     border-radius: 8px;
     display: inline-block;
 }
- 
+
 .project-grid {
     margin-top: 40px;
+    margin-left: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
 }
- 
+
 .project-card {
     padding: 30px;
     border: 1px solid #8f719c40;
@@ -371,39 +386,41 @@ section p{
     background: #8f719c0d;
     display: flex;
     flex-direction: column;
-    transition: border-color 0.2s ease, transform 0.2s ease;
+    transition:
+        border-color 0.2s ease,
+        transform 0.2s ease;
 }
- 
+
 .project-card:hover {
     border-color: #8f719c;
     transform: translateY(-4px);
 }
- 
+
 .project-card h3 {
     color: white;
     font-family: 'Roboto Mono', monospace;
     font-size: 1.3rem;
     font-weight: 500;
 }
- 
+
 .project-card p {
     margin-top: 14px;
     font-size: 1rem;
     line-height: 1.6rem;
 }
- 
+
 .project-card .stack {
     margin-top: auto;
     padding-top: 18px;
     font-size: 0.9rem;
     color: #b495c2;
 }
- 
+
 .project-links {
     list-style: none;
     margin-top: 18px;
 }
- 
+
 .project-links a {
     color: #b495c2;
     font-family: 'Roboto Mono', monospace;
@@ -411,34 +428,45 @@ section p{
     text-decoration: none;
     border-bottom: 1px solid #8f719c80;
     padding-bottom: 2px;
-    transition: color 0.2s ease, border-color 0.2s ease;
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
 }
- 
+
 .project-links a:hover {
     color: white;
     border-color: white;
 }
- 
+
+#code-example {
+    min-height: 1vh;
+}
+
 #code-example p a {
     color: #b495c2;
     text-decoration: none;
     border-bottom: 1px solid #8f719c80;
 }
- 
+
 #code-example p a:hover {
     color: white;
     border-color: white;
 }
- 
+#code-example p {
+    margin-left: 30px;
+    width: 60%;
+}
+
 #code-example pre {
     margin-top: 24px;
+    margin-left: 30px;
     padding: 24px;
     background: #17182a;
     border: 1px solid #8f719c40;
     border-radius: 10px;
     overflow-x: auto;
 }
- 
+
 #code-example code {
     font-family: 'Roboto Mono', monospace;
     font-size: 0.95rem;
@@ -446,19 +474,22 @@ section p{
     color: #e6dfeb;
     white-space: pre;
 }
- 
+
 #education h3 {
     color: #b495c2;
     font-family: 'Roboto Mono', monospace;
     font-size: 1.4rem;
     margin-top: 40px;
 }
- 
+
+#education > * {
+    margin-left: 30px;
+}
 #education > p strong {
     color: white;
     font-weight: 700;
 }
- 
+
 #education ul {
     list-style: none;
     margin-top: 20px;
@@ -466,7 +497,7 @@ section p{
     flex-direction: column;
     gap: 12px;
 }
- 
+
 #education ul li a {
     color: #b495c2;
     font-family: 'Roboto Mono', monospace;
@@ -474,9 +505,11 @@ section p{
     text-decoration: none;
     border-bottom: 1px solid #8f719c80;
     padding-bottom: 2px;
-    transition: color 0.2s ease, border-color 0.2s ease;
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
 }
- 
+
 #education ul li a:hover {
     color: white;
     border-color: white;
